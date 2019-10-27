@@ -23,6 +23,14 @@
               <v-form>
                 <v-text-field label="Username" type="text" />
                 <v-text-field label="Password" type="password" />
+                <div class="text-center">
+                  <v-btn raised color="success">
+                    Login
+                  </v-btn>
+                  <v-btn raised>
+                    Register
+                  </v-btn>
+                </div>
               </v-form>
             </v-card-text>
           </v-card>
