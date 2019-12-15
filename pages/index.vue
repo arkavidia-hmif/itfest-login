@@ -5,8 +5,8 @@
         <v-col cols="12" sm="8" md="4">
           <v-card raised p-4>
             <v-row align="center" justify="center">
-              <v-col cols="10">
-                <v-img src="/logo_horizontal.svg" class="justify-center" />
+              <v-col cols="10" align="center">
+                <img src="~/assets/logo-horz.svg" class="justify-center main-logo">
               </v-col>
             </v-row>
             <v-list-item three-line>
@@ -24,10 +24,10 @@
                 <v-text-field label="Username" type="text" />
                 <v-text-field label="Password" type="password" />
                 <div class="text-center">
-                  <v-btn raised color="success">
+                  <v-btn raised color="success" class="mx-4">
                     Login
                   </v-btn>
-                  <v-btn raised>
+                  <v-btn raised class="mx-4">
                     Register
                   </v-btn>
                 </div>
@@ -40,10 +40,13 @@
   </v-content>
 </template>
 
-<script>
+<script lang="ts">
 
-export default {
-  components: {
-  }
-}
 </script>
+
+<style lang="scss" scoped>
+.main-logo{
+  width:80%;
+  height:auto;
+}
+</style>
