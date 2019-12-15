@@ -11,11 +11,11 @@
             </v-row>
             <v-list-item three-line>
               <v-list-item-content>
-                <v-list-item-title class="headline mb-1">
+                <v-list-item-title class="headline mb-1" align="center">
                   Login
                 </v-list-item-title>
-                <v-list-item-subtitle>
-                  Silakan lakukan login terlebih dahulu.
+                <v-list-item-subtitle align="center">
+                  Enter your login credentials.
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -23,14 +23,17 @@
               <v-form>
                 <v-text-field label="Username" type="text" />
                 <v-text-field label="Password" type="password" />
-                <div class="text-center">
-                  <v-btn raised color="success" class="mx-4">
-                    Login
-                  </v-btn>
-                  <v-btn raised class="mx-4">
-                    Register
-                  </v-btn>
-                </div>
+                <v-row class="text-center">
+                  <v-col cols="12">
+                    <v-btn raised color="success" class="mx-4 px-12">
+                      Login
+                    </v-btn>
+                  </v-col>
+                  <v-col cols="12">
+                    <p>Not yet registered? <a>Register.</a>
+                    </p>
+                  </v-col>
+                </v-row>
               </v-form>
             </v-card-text>
           </v-card>
