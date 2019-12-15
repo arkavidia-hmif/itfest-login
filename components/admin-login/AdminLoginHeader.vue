@@ -1,0 +1,25 @@
+<template>
+  <v-list-item>
+    <v-list-item-content>
+      <v-list-item-title class="headline mb-1" align="center">
+        Login
+      </v-list-item-title>
+      <v-list-item-subtitle align="center">
+        Enter your login credentials.
+      </v-list-item-subtitle>
+    </v-list-item-content>
+  </v-list-item>
+</template>
+
+<style lang="scss" scoped>
+
+</style>
+
+<script>
+import Vue from 'vue';
+
+export default Vue.extend({
+  name: 'AdminLoginHeader'
+});
+
+</script>
