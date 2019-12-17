@@ -10,7 +10,7 @@
         </v-col>
         <v-col cols="12">
           <v-card-text>
-            <LoginForm />
+            <AdminLoginForm :button-text="'LOGIN'" :show-register-button="true" />
           </v-card-text>
         </v-col>
       </v-row>
@@ -24,14 +24,14 @@
 
 <script lang='ts'>
 import Vue from 'vue';
-import LoginForm from './LoginForm.vue';
+import AdminLoginForm from './AdminLoginForm.vue';
 import ArkavidiaLoginImage from './ArkavidiaLoginImage.vue';
 import AdminLoginHeader from './AdminLoginHeader.vue';
 
 export default Vue.extend({
   name: 'AdminLogin',
   components: {
-    LoginForm,
+    AdminLoginForm,
     ArkavidiaLoginImage,
     AdminLoginHeader
   }

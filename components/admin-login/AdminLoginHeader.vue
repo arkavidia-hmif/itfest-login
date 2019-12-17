@@ -12,7 +12,9 @@
 </template>
 
 <style lang="scss" scoped>
-
+.headline{
+ font-weight: 600;
+}
 </style>
 
 <script>
