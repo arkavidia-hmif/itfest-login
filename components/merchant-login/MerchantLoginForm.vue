@@ -1,21 +1,23 @@
 <template>
-  <v-form class="mx-12 justify-center">
-    <v-text-field label="Email Address" type="text" outlined background-color="white" />
-    <v-text-field label="Password" type="password" outlined background-color="white" />
-    <div class="text-center">
-      <v-btn class="mt-4 px-12 py-2" outlined>
-        {{ buttonText }}
-      </v-btn>
-      <div class="subtitle-1 mt-4">
-        <div v-if="showRegisterButton">
-          Not registered yet? <a href="#">Register here.</a>
-        </div>
-        <div v-if="showForgotButton">
-          Forgot password? <a href="#">Reset here.</a>
+  <v-content :class="{'ma-0': $vuetify.breakpoint.smAndDown, 'ma-12': $vuetify.breakpoint.smAndUp}">
+    <v-form class="justify-center">
+      <v-text-field label="Email Address" type="text" outlined background-color="white" />
+      <v-text-field label="Password" type="password" outlined background-color="white" />
+      <div class="text-center">
+        <v-btn class="mt-4 px-12 py-2" outlined>
+          {{ buttonText }}
+        </v-btn>
+        <div class="subtitle-1 mt-4">
+          <div v-if="showRegisterButton">
+            Not registered yet? <a href="#">Register here.</a>
+          </div>
+          <div v-if="showForgotButton">
+            Forgot password? <a href="#">Reset here.</a>
+          </div>
         </div>
       </div>
-    </div>
-  </v-form>
+    </v-form>
+  </v-content>
 </template>
 
 <style lang="scss" scoped>

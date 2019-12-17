@@ -7,14 +7,15 @@
       align-center
       justify-center
     >
-      <div class="text-right headline section-title">
+      <div class="text-right display-1 section-title font-weight-bold">
         Login ke Dashboard.
       </div>
     </v-col>
+    <v-col v-show="$vuetify.breakpoint.lgAndUp" lg="1" />
     <v-col
       cols="12"
       md="6"
-      lg="6"
+      lg="5"
       align-center
       justify-center
     >
@@ -38,11 +39,11 @@
   .section-title:after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 150px;
     height: 1px;
-    bottom: 0;
+    bottom: -10px;
     right: 0;
-    border-bottom: 4px solid #FF084F;
+    border-bottom: 6px solid #FF084F;
   }
 </style>
 
