@@ -1,7 +1,7 @@
 <template>
   <v-content :class="{'ma-0': $vuetify.breakpoint.smAndDown, 'ma-12': $vuetify.breakpoint.smAndUp}">
     <v-form class="justify-center">
-      <v-text-field label="Email Address" type="text" outlined background-color="white" />
+      <v-text-field label="Username" type="text" outlined background-color="white" />
       <v-text-field label="Password" type="password" outlined background-color="white" />
       <div class="text-center">
         <v-btn class="mt-4 px-12 py-2" outlined>

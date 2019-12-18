@@ -1,5 +1,5 @@
 <template>
-  <v-content class="login-container">
+  <v-content class="merchant-login-container">
     <v-container class="fill-height" fluid pa-12>
       <MerchantLogin />
     </v-container>
@@ -7,7 +7,9 @@
 </template>
 
 <style lang="scss" scoped>
-
+.merchant-login-container{
+  background-color:#fefefe;
+}
 </style>
 
 <script lang="ts">

@@ -8,7 +8,7 @@
       justify-center
     >
       <div class="text-right display-1 section-title font-weight-bold">
-        Login ke Dashboard.
+        Login to Merchant Dashboard.
       </div>
     </v-col>
     <v-col v-show="$vuetify.breakpoint.lgAndUp" lg="1" />
@@ -27,9 +27,6 @@
 <style lang="scss" scoped>
   .headline{
     font-weight: 700;
-  }
-  .login-container{
-    background-color:#ffffff;
   }
   .section-title {
     position: relative;
